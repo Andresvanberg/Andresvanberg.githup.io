@@ -1,0 +1,58 @@
+h1{
+
+  background-color: yellow;
+  color: green;
+
+
+
+
+}
+
+header{
+  background-color: purple;
+  height: 100px;
+  width: 600px;
+
+
+}
+
+nav{
+    background-color: #ffe34567;
+    height: 100px;
+    width: 600px;
+
+  }
+  main{
+    background-color: orange;
+    height: 500px;
+    width: 450px;
+
+  }
+
+  aside{
+    background-color: #de31;
+    height: 500px;
+    width: 150px;
+    ;
+
+
+  }
+
+  footer{
+    background-color: #c3cdde;
+    height: 100px;
+    width: 600px;
+
+
+  }
+
+#mainwrapper{
+  display: flex;
+
+}
+#wrapper{
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
