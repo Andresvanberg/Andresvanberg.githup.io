@@ -11,7 +11,7 @@ h1{
 header{
   background-color: purple;
   height: 100px;
-  width: 600px;
+  width: 100%;
 
 
 }
@@ -19,20 +19,20 @@ header{
 nav{
     background-color: #ffe34567;
     height: 100px;
-    width: 600px;
+    width: 100%;
 
   }
   main{
     background-color: orange;
     height: 500px;
-    width: 450px;
+    width: 80%;
 
   }
 
   aside{
-    background-color: #de31;
+    background-color: #de3122;
     height: 500px;
-    width: 150px;
+    width: 20%;
     ;
 
 
@@ -41,7 +41,7 @@ nav{
   footer{
     background-color: #c3cdde;
     height: 100px;
-    width: 600px;
+    width: 100%;
 
 
   }
@@ -51,8 +51,23 @@ nav{
 
 }
 #wrapper{
-  width:600px;
+  width:100%;
   margin-left: auto;
   margin-right: auto;
 
+}
+
+@media only screen and (max-width: 500px) {
+
+  #mainwrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    width: 100%;
+    }
+    aside{
+      width: 100%;
+
+    }
 }
