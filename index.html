@@ -13,17 +13,14 @@
 
   <div id="wrapper">
 
-
     <body>
 
       <h1>Ok Bommer!</h1>
 
       <p>Yeet</p>
 
-
       <header>
         header
-
 
         </header>
         <nav>
@@ -51,21 +48,33 @@
         </a>
       -->
 
-
-
         </nav>
 
         <div id="mainwrapper">
-
-
         <main>
-          Detta är startsidan
+          <div id="boxwrapper">
+            <div id="boxleft">
+                Detta är start sida
+
+            </div>
+
+              <div id="boxright">
+                Detta är et medelande till alla som kommer att läsa allt på min dator så jag vet vart ni bor och kommer inte vara rädd att beställa pizza.
+              </div>
+          </div>
+          <div id="bottomcenter">
+            Yeet
+
+          </div>
+
+
+
           <!--
           detta är et medelande till alla som kommer att läsa allt på min dator så jag vet vart ni bor och kommer inte vara rädd att beställa pizza.
           <img src="img/bild.jpg" alt="">
         -->
         </main>
-        <aside class="">
+        <aside>
           aside
 
         </aside>
@@ -78,6 +87,22 @@
 
 
       </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+
+      $("#boxleft").click(function(){
+      //  console.log("hej");
+      //  $("#boxleft").css("background","hotpink")
+      $("#boxright").toggle("slow",function(){
+
+
+      });
+
+      });
+
+      </script>
+
   </body>
 
 </html>
