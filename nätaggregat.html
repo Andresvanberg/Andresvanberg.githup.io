@@ -6,39 +6,37 @@
     <link rel="stylesheet" href="css/master.css">
 
     <meta charset="utf-8">
-    <title>It's time for Zommers!</title>
+    <title>Darton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
 
   <div id="wrapper">
 
-
     <body>
 
-      <h1>Ok Bommer!</h1>
-
-      <p>Yeet</p>
+      <h1>Datorkomponenter</h1>
 
 
-      <header>
-        header
 
-
-        </header>
         <nav>
 
           <center>
           <a href="index.html">
             <button type"btn" name="Start Sidan">Start Sidan</button>
+          </a>
           <a href="chassie.html">
           <button type"btn" name="Start Sidan">Chassie</button>
+          </a>
           <a href="cpu.html">
           <button type"btn" name="Start Sidan">Cpu</button>
+          </a>
           <a href="Gpu.html">
           <button type"btn" name="Start Sidan">Grafikkort</button>
+          </a>
           <a href="nätaggregat.html">
           <button type"btn" name="Start Sidan">Nätaggregat</button>
+          </a>
           <a href="rammiminne.html">
           <button type"btn" name="Start Sidan">Ram</button>
           </a>
@@ -60,48 +58,65 @@
         </a>
       -->
 
-
-
         </nav>
 
         <div id="mainwrapper">
-
-
         <main>
+          <div id="boxwrapper">
+            <div id="boxleft">
+                Nätaggregatet är som hjärtat i darton för den levererar ström till alla delarna och den kan variera för att man kan ha olika delar i en dator. 
 
-            <div id="boxwrapper">
-              <div id="boxleft">
-                  nätaggregat
+            </div>
+
+              <div id="boxright">
+                <!--Detta är et medelande till alla som kommer att läsa allt på min dator så jag vet vart ni bor och kommer inte vara rädd att beställa pizza.
+                -->
+
 
               </div>
+          </div>
+          <div id="bottomcenter">
+            En dator är en maskin som kan bearbeta data och utföra beräkningar automatiskt och effektivare än vad som kan göra manuellt. Datorn består av optiska eller andra komponenter och styrs med hjälp av datorprogram som lagras i dess ramminne.
 
-                <div id="boxright">
+          </div>
 
-                </div>
-            </div>
-            <div id="bottomcenter">
-              Yeet
 
-            </div>
 
           <!--
           detta är et medelande till alla som kommer att läsa allt på min dator så jag vet vart ni bor och kommer inte vara rädd att beställa pizza.
           <img src="img/bild.jpg" alt="">
         -->
         </main>
-        <aside class="">
-          aside
+        <aside>
+          <img src="img/dator.jpg" alt="">
 
         </aside>
         </div>
         <footer>
 
-          footer
+      <a href="https://en.wikipedia.org/wiki/Computer">
+        Källa
+      </a>
 
         </footer>
 
 
       </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+
+      $("#boxleft").click(function(){
+      //  console.log("hej");
+    //  $("#boxleft").css("background","hotpink")
+    $("#boxright").toggle("slow",function(){
+
+    });
+
+      });
+
+      </script>
+
   </body>
 
 </html>
