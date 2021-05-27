@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style> /* gär till*/
+    #diveru{
+      display: none;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div id=diveru>
+    <form>
+      <label for"färg">Färg:</label>
+      <input type="color" name="förnman" id="färg">
+    </form>
+    <button type="button" id="colorbutton" name="button">Välj färg</button>
+  </div> <!-- till hit tar bort allt -->
+  </body>
+
+  <script>
+document.getElementById("diveru").style.display="block"; // det här blockar javascript 
+    var b = localStorage.getItem("färg");
+    document.body.style.backgroundColor =b;
+
+  document.getElementById('colorbutton').addEventListener("click", changebackground);
+
+  function changebackground() {
+
+  var i =  document.getElementById("färg").value;
+  document.body.style.backgroundColor =i;
+    console.log("klickat");
+    localStorage.setItem("färg", i);
+  }
+  </script>
+</html>

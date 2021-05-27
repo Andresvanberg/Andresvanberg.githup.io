@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+
+    body{
+      background-color: #123456
+
+    }
+
+    #window{
+      height: 765px;
+      width: 840px;
+      border: 8px solid blue;
+      z-index: 10;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      display: none;
+      border-radius: 10px;
+
+
+    }
+    #pictuers{
+      position: relative;
+      display:  flex;
+      z-index: 1;
+    }
+
+    #knapp1{
+      height: 50px;
+      width: 110px;
+      background-color: black;
+      margin-left: auto;
+      margin-right: 700px;
+      margin-top: -21px;
+      border-radius: 10px;
+      color: white;
+      display: none;
+      text-align: center;
+    }
+
+    #knapp2{
+      height: 50px;
+      width: 110px;
+      background-color: black;
+      margin-left: 700px;
+      margin-right: auto;
+      margin-top: -72px;
+      border-radius: 10px;
+      color: white;
+      display: none;
+      text-align: center;
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <div id="window">
+      <div id="pictuers">
+        <img src="https://www.pngfind.com/pngs/m/12-128175_drawn-crown-emoji-emojis-qui-tire-la-langue.png" alt="bild 1">
+        <img src="https://www.pngfind.com/pngs/m/47-476667_fingers-clipart-middle-finger-emoji-sad-emoji-hd.png" alt="bild 2">
+        <img src="https://www.pngfind.com/pngs/m/2-25774_how-to-use-gifs-emojis-and-memes-imagem.png" alt="bild 3">
+        <img src="https://www.pngfind.com/pngs/m/12-128175_drawn-crown-emoji-emojis-qui-tire-la-langue.png" alt="bild 1/4">
+      </div>
+    </div>
+
+    <div id="knapp1"><h1>Höger</h1></div>
+    <div id="knapp2"><h1>Vänster</h1></div>
+
+    <div id="bilder2">
+      <img src="https://www.pngfind.com/pngs/m/12-128175_drawn-crown-emoji-emojis-qui-tire-la-langue.png" alt="bild 1">
+      <img src="https://www.pngfind.com/pngs/m/47-476667_fingers-clipart-middle-finger-emoji-sad-emoji-hd.png" alt="bild 2">
+      <img src="https://www.pngfind.com/pngs/m/2-25774_how-to-use-gifs-emojis-and-memes-imagem.png" alt="bild 3">
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    var i=0;
+    $("#window").show(); // visar bilderna när javascript är på
+      $("#bilder2").hide(); // gömmer bilderna när javascript är på
+      $("#knapp2").show(); $("#knapp1").show();
+
+
+      $("#knapp2").click(function(){
+
+        console.log(i);
+        if (i==0) {//räknare
+          $("#pictuers").css("left","-=2520px");
+          i=3;
+        }else {
+          i--;
+          $('#pictuers').animate({
+          'left' : "+=840px"
+        });
+
+        }
+
+      });
+      $("#knapp1").click(function(){
+
+      if (i==3) { //räknare
+        $("#pictuers").css("left","0");
+        console.log(i);
+        i=0;
+      }else {
+        i++;
+        $('#pictuers').animate({
+          'left' : "-=840px"
+        });
+      }
+
+      });
+
+    </script>
+  </body>
+</html>
